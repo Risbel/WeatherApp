@@ -49,3 +49,25 @@ body {
     background-color: transparent;
     
 }
+
+
+.weather-image{
+    display: flex;
+    flex-grow: inherit;
+    justify-content: center;
+    height: 200px; 
+}
+
+.name-city {
+    display: flex;
+    flex: inherit;
+    justify-content: center;
+
+    font-size: 30px;
+    font-family: Verdana;
+}
+
+.dates-container {
+    display: flex;
+    display: inline;
+}
