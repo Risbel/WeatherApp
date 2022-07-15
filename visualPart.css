@@ -67,7 +67,17 @@ body {
     font-family: Verdana;
 }
 
+
 .dates-container {
-    display: flex;
-    display: inline;
+    background-color:#fdfcfc;
+    border-radius: 10px;
+} 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
 }
