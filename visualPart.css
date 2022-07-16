@@ -57,12 +57,21 @@ body {
     height: 200px; 
 }
 
+.degrees {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.location {
+    display: flex;
+    justify-content: center;    
+}
+
 .name-city {
     text-align: center;
     font-size: 2rem;
     font-family: Inter-Bold;
 }
-
 
 .dates-container {
     background-color:#fdfcfc;
