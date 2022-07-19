@@ -15,7 +15,7 @@
     <div class="main-container">
         <div class="search-input-container">
             <input type="text" class="search-input" placeholder="Search Location">
-            <button class="icon-container" onclick="alert('hi')"> 
+            <button class="icon-container"> 
                 <img class="lens-icon" src="./images/search-icon.png" width="22px">    
             </button>
         </div>
@@ -27,26 +27,24 @@
 
     <!--Name of the city-->
     <div class="location">
-        <h1 class="name-city">Cuba</h1>
+        <h1 id="location" class="name-city"></h1>
         <img src="./images/bx-current-location.svg">
     </div>
 
-    <h1 class="degrees">0°</h1>
-
+    <div class="temperature">
+        <img src="./images/bxs-thermometer.svg" width="25">
+        <h1 id="temp" class="degrees"></h1>
+    </div>
 
     <div class="dates-container">
         <table>
             <tr>
-                <td>Time</td>
-                <td>UV</td>
-                <td>% RAIN</td>
-                <td>AQ</td>
+                <td>Date</td>
+                <td>Humidity</td>      
             </tr>
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
+                <td id="date"></td>
+                <td id="humidity"></td>
             </tr>
         </table>
     </div>
