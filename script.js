@@ -1,28 +1,49 @@
 // vas a programar aqui, puedes usar los metodos de openweatherservice.js
-getWeatherData(place).then((data) => setWeatherData(data));
+
 
 const setWeatherData = data => {
     console.log(data)
+
+    var ImgIcon = data.weather[0].icon
+
+    console.log(ImgIcon)
+    //setImage()
+    
     const weatherData = {
+        
         location: data.name,
         temp: data.main.temp += "°",
         humidity: data.main.humidity += "%",
         date: getDate(),
+        hour: time(),  
     }
-
-    Object.keys(weatherData).forEach ( key => {
+    
+    Object.keys(weatherData).forEach( key => {
         document.getElementById(key).textContent = weatherData[key]
-    })
-  
+    }) 
+      
 }
+/*
+const setImage = (ImgIcon) => {
+    document.getElementById(weatherImg).src = 'http://openweathermap.org/img/wn/'+ ImgIcon +'.png'    
+}
+*/
 
 const getDate = () => {
     let date = new Date()
-    return `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`
+    return `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`
+}
+const time = () => {
+    let date = new Date()
+    return `${date.getHours()}:${date.getMinutes()}`
 }
 
 
-function load(input) {
-    const input = document.getElementsByClassName("icon-container").textContent
+
+
+function load() {
+    const input = document.getElementById("search-input").value
     return getWeatherData(input)
+        .then((data) => setWeatherData(data))    
 }
+
