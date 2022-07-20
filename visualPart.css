@@ -108,7 +108,7 @@ td {
     background-color: rgba(0, 0, 0, 0.7); /* El formato rgba es parecido a rgb, pero el ultimo numero controla la transparencia */
     /* Le puse un color oscuro xq el fondo es blanco y no se veía el spinner */
     /* </Añadí esto> */
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 100vh;
