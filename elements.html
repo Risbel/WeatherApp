@@ -10,52 +10,56 @@
     <link rel="stylesheet" href="visualPart.css">
     <title>Document</title>
 </head>
+
 <body>
-    <!--Search Location-->
+     <!--Search Location-->
     <div class="main-container">
-        <div class="search-input-container">
-            <input id="search-input" type="text" class="search-input" placeholder="Search Location">
-            <button onclick="load()" class="icon-container"> 
-                <img class="lens-icon" src="./images/search-icon.png" width="22px">    
-            </button>
+            <div class="search-input-container">
+                <input id="search-input" type="text" class="search-input" placeholder="Search Location">
+                    <button onclick="load()" class="icon-container"> 
+                        <img class="lens-icon" src="./images/search-icon.png" width="22px">    
+                    </button>
+            </div>
+
+            <!--Weather-Image-->
+            <div class="weather-image">
+                <img id="weatherImg" class ="main-image" src="" width="200px">
+            </div>
+
+            <!--Name of the city-->
+            <div class="location">
+                <h1 id="location" class="name-city"></h1>
+                <img src="./images/bx-current-location.svg">
+            </div>
+
+            <div class="temperature">
+                <img src="./images/bxs-thermometer.svg" width="25">
+                <h1 id="temp" class="degrees"></h1>
+            </div>
+
+        <div class="dates-container">
+            <table>
+                <tr>
+                    <td>Date</td>
+                    <td>Time</td>
+                    <td>Humidity</td>      
+                </tr>
+                <tr>
+                    <td id="date"></td>
+                    <td id="hour"></td>
+                    <td id="humidity"></td>
+                </tr>
+            </table>
         </div>
-
-    <!--Weather-Image-->
-    <div class="weather-image">
-        <img id="weatherImg" class ="main-image" src="" width="200px">
     </div>
 
-    <!--Name of the city-->
-    <div class="location">
-        <h1 id="location" class="name-city"></h1>
-        <img src="./images/bx-current-location.svg">
-    </div>
+<div class="div-loading">
+    <div id="loader" class="loading-page">Loading...</div>
+</div>
 
-    <div class="temperature">
-        <img src="./images/bxs-thermometer.svg" width="25">
-        <h1 id="temp" class="degrees"></h1>
-    </div>
+<!-- Referencias a js -->
+<script src="./openweatherservice.js"></script>
+<script src="./script.js"></script>
 
-    <div class="dates-container">
-        <table>
-            <tr>
-                <td>Date</td>
-                <td>Time</td>
-                <td>Humidity</td>      
-            </tr>
-            <tr>
-                <td id="date"></td>
-                <td id="hour"></td>
-                <td id="humidity"></td>
-            </tr>
-        </table>
-    </div>
-
-    
-
-
-    <!-- Referencias a js -->
-    <script src="./openweatherservice.js"></script>
-    <script src="./script.js"></script>
 </body>
 </html>
