@@ -6,7 +6,7 @@ const APP_ID = "ae1ba5d38aeff23990ba7232649a9865";
 const getWeatherData = (place) =>
     fetch(`${BASE_URL}?q=${place}&APPID=${APP_ID}&units=metric`)
         .then((response) => response.json())
-        .catch(err => alert(err))
+        .catch(err => alert(err.messaje))
 
 
 

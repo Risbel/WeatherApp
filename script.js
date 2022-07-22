@@ -1,6 +1,10 @@
 // vas a programar aqui, puedes usar los metodos de openweatherservice.js
-
- 
+function start(e) {
+    if (e.keyCode == 13) {
+        load()
+    }
+}
+window.onkeypress = start;
 
 function load() {
     const spinner = document.getElementById("div-loading");
@@ -40,5 +44,5 @@ const getDate = () => {
 };
 const time = () => {
     let date = new Date()
-    return `${date.getHours()}:${date.getMinutes()}`
+    return `${date.getHours()} : ${("0" + date.getMinutes()).slice(-2)}`
 };

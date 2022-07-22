@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheather app</title>
+
     <!--link with css-->
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="visualPart.css">
@@ -16,14 +17,14 @@
     <div class="main-container">
             <div class="search-input-container">
                 <input id="search-input" type="text" class="search-input" placeholder="Search Location">
-                    <button onclick="load()" class="icon-container"> 
+                    <button id="myButton"  onclick="load()" class="icon-container"> 
                         <img class="lens-icon" src="./images/search-icon.png" width="22px">    
                     </button>
             </div>
 
             <!--Weather-Image-->
             <div class="weather-image">
-                <img id="weatherImg" class ="main-image" src="" width="200px">
+                <img id="weatherImg" class ="main-image" src="./images/cloudy-day-1.svg" width="200px">
             </div>
 
             <!--Name of the city-->
@@ -57,6 +58,8 @@
     <div id="loader" class="loading-page">Loading...</div>
 </div>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- Referencias a js -->
 <script src="./openweatherservice.js"></script>
 <script src="./script.js"></script>
