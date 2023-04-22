@@ -1,7 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
-  background: gray;
+  background: blueviolet;
 }
 
 .main-container {
@@ -123,12 +123,14 @@ body {
 
 .name-dates-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  text-align: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .dates {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  text-align: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 table {
